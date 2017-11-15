@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "facing=north": { "model": "reinforcedpumpkin:reinforced_pumpkin" },
+        "facing=south": { "model": "reinforcedpumpkin:reinforced_pumpkin", "y": 180 },
+        "facing=west":  { "model": "reinforcedpumpkin:reinforced_pumpkin", "y": 270 },
+        "facing=east":  { "model": "reinforcedpumpkin:reinforced_pumpkin", "y": 90 },
+	"inventory": { "model": "reinforcedpumpkin:reinforced_pumpkin" }
+    }
+}

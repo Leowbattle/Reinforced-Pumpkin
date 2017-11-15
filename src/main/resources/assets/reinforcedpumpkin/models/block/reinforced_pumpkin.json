@@ -1,0 +1,12 @@
+{
+    "parent": "block/cube",
+    "textures": {
+        "up": "reinforcedpumpkin:blocks/reinforced_pumpkin_top",
+	"down": "reinforcedpumpkin:blocks/reinforced_pumpkin_bottom",
+        "north": "reinforcedpumpkin:blocks/reinforced_pumpkin_face",
+	"south": "reinforcedpumpkin:blocks/reinforced_pumpkin_back",
+        "east": "reinforcedpumpkin:blocks/reinforced_pumpkin_side",
+	"west": "reinforcedpumpkin:blocks/reinforced_pumpkin_side_west",
+	"particle": "reinforcedpumpkin:blocks/reinforced_pumpkin_face"
+    }
+}
