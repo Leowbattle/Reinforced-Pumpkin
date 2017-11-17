@@ -60,7 +60,7 @@ public class ItemBlockReinforcedFruit extends ItemBlock {
 	@Override
 	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
 		if (isJackOLantern && ModConfig.lanternsProvideNightVision) {
-			player.addPotionEffect(new PotionEffect(Potion.getPotionById(16), 5));
+			player.addPotionEffect(new PotionEffect(Potion.getPotionById(16), 220));
 	
 		}
 	}
