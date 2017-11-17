@@ -1,0 +1,9 @@
+{
+    "variants": {
+        "facing=north": { "model": "reinforcedpumpkin:reinforced_lantern_diamond" },
+        "facing=south": { "model": "reinforcedpumpkin:reinforced_lantern_diamond", "y": 180 },
+        "facing=west":  { "model": "reinforcedpumpkin:reinforced_lantern_diamond", "y": 270 },
+        "facing=east":  { "model": "reinforcedpumpkin:reinforced_lantern_diamond", "y": 90 },
+	"inventory": { "model": "reinforcedpumpkin:reinforced_lantern_diamond" }
+    }
+}

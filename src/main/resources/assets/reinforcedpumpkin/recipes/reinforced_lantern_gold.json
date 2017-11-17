@@ -1,0 +1,15 @@
+{
+  "type": "minecraft:crafting_shapeless",
+  "ingredients": [
+    {
+      "item": "minecraft:lit_pumpkin"
+    },
+    {
+      "item": "minecraft:diamond_helmet"
+    }
+  ],
+  "result": {
+    "item": "reinforcedpumpkin:reinforced_lantern_gold",
+    "count": 1
+  }
+}

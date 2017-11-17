@@ -5,23 +5,28 @@ import java.util.UUID;
 import com.google.common.collect.Multimap;
 
 import net.minecraft.block.Block;
-import net.minecraft.enchantment.Enchantment;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.SharedMonsterAttributes;
 import net.minecraft.entity.ai.attributes.AttributeModifier;
+import net.minecraft.entity.player.EntityPlayer;
 import net.minecraft.inventory.EntityEquipmentSlot;
 import net.minecraft.item.ItemBlock;
 import net.minecraft.item.ItemStack;
+import net.minecraft.potion.Potion;
+import net.minecraft.potion.PotionEffect;
+import net.minecraft.world.World;
+import reinforcedpumpkin.ModConfig;
 
 public class ItemBlockReinforcedFruit extends ItemBlock {
 	public static String uuid = "dbfb18a3-81d7-4711-8882-6292c2f4bea4";
 	
 	public String type;
+	public boolean isJackOLantern;
 	
-	
-	public ItemBlockReinforcedFruit(Block block, String type) {
+	public ItemBlockReinforcedFruit(Block block, String type, boolean isJackOLantern) {
 		super(block);
 		this.type = type;
+		this.isJackOLantern = isJackOLantern;
 	}
 
 	@Override
@@ -50,5 +55,13 @@ public class ItemBlockReinforcedFruit extends ItemBlock {
         }
         return multimap;
     	
+	}
+
+	@Override
+	public void onArmorTick(World world, EntityPlayer player, ItemStack itemStack) {
+		if (isJackOLantern && ModConfig.lanternsProvideNightVision) {
+			player.addPotionEffect(new PotionEffect(Potion.getPotionById(16), 5));
+	
+		}
 	}
 }

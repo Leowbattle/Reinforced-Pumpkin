@@ -13,6 +13,8 @@ import reinforcedpumpkin.blocks.ModBlocks;
 public class EnderAngerChecker {
 	@SubscribeEvent
 	public static void enderAnger(LivingSetAttackTargetEvent event) {
+		if (!ModConfig.reinforcedPumpkinsWorkLikeNormalPumpkins) {return;}
+		
 		if (event.getEntity() instanceof EntityEnderman) {
 			if (event.getTarget() instanceof EntityPlayer) {
 				for (ItemStack stack: ((EntityPlayer)event.getTarget()).getArmorInventoryList() ) {
